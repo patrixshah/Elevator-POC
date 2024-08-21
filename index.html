@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevators POC</title>
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="building">
+      <!-- Floors -->
+      <div class="floor call" data-floor="9">
+        Floor 9 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="8">
+        Floor 8 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="7">
+        Floor 7 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="6">
+        Floor 6 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="5">
+        Floor 5 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="4">
+        Floor 4 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="3">
+        Floor 3 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="2">
+        Floor 2 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="1">
+        Floor 1 <button class="btn-elevator-call">Call</button>
+      </div>
+      <div class="floor call" data-floor="0">
+        Ground Floor <button class="btn-elevator-call">Call</button>
+      </div>
+
+      <!-- Elevators -->
+      <div class="elevator" id="elevator1" data-floor="1"></div>
+      <div class="elevator" id="elevator2" data-floor="1"></div>
+      <div class="elevator" id="elevator3" data-floor="1"></div>
+      <div class="elevator" id="elevator4" data-floor="1"></div>
+      <div class="elevator" id="elevator5" data-floor="1"></div>
+    </div>
+    <!-- Sound Element -->
+    <audio
+      id="arrivalSound"
+      src="./assets/audio/elevator-door-open.mp3"
+      preload="auto"
+    ></audio>
+    <script type="text/javascript" src="./assets/js/main.min.js"></script>
+  </body>
+</html>
